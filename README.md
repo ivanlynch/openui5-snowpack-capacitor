@@ -9,7 +9,7 @@
 - OpenUI5 (Frontend framework)
 - Gulp (Task runner)
 
-# Prerequisites
+# Prerequisites
 
 - [NodeJS](https://nodejs.org/en/ 'NodeJS')
 - [Gulp](https://gulpjs.com/ 'Gulp')
