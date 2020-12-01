@@ -1,0 +1,16 @@
+{
+  "appId": "com.snowpack.app",
+  "appName": "snowpackapp",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "server": {
+      "url": "http://0.0.0.0:8080"
+  },
+  "cordova": {}
+}

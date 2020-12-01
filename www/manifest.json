@@ -1,0 +1,92 @@
+{
+    "_version": "1.1.0",
+    "sap.app": {
+      "id": "ctx",
+      "type": "application",
+      "i18n": {
+        "bundleUrl": "i18n/i18n.properties",
+        "supportedLocales": [""],
+        "fallbackLocale": ""
+      },
+      "applicationVersion": {
+        "version": "1.0.0"
+      },
+      "title": "{{appTitle}}",
+      "description": "{{appDescription}}",
+      "dataSources": {
+      }
+    },
+    "sap.ui": {
+      "technology": "UI5",
+      "deviceTypes": {
+        "desktop": true,
+        "tablet": true,
+        "phone": true
+      }
+    },
+    "sap.ui5": {
+      "rootView": {
+        "viewName": "ctx.view.App",
+        "type": "XML",
+        "async": true,
+        "id": "app"
+      },
+      "dependencies": {
+        "minUI5Version": "1.48.0",
+        "libs": {
+          "sap.m": {},
+          "sap.ui.core": {},
+          "sap.ui.layout": {}
+        }
+      },
+      "contentDensities": {
+        "compact": true,
+        "cozy": true
+      },
+      "handleValidation": true,
+      "config": {},
+      "routing": {
+        "config": {
+          "routerClass": "sap.m.routing.Router",
+          "viewType": "XML",
+          "viewPath": "ctx.view",
+          "controlId": "app",
+          "controlAggregation": "pages",
+          "async": true
+        },
+        "routes": [
+          {
+            "pattern": "",
+            "name": "home",
+            "target": "home"
+          },
+          {
+            "pattern": "detail{path}",
+            "name": "detail",
+            "target": "detail"
+          }
+        ],
+        "targets": {
+          "home": {
+            "viewId": "home",
+            "viewName": "Home"
+          },
+          "detail": {
+            "viewId": "detail",
+            "viewName": "Detail"
+          }
+        }
+      },
+      "models": {
+        "i18n": {
+          "type": "sap.ui.model.resource.ResourceModel",
+          "settings": {
+            "bundleName": "ctx.i18n.i18n",
+            "supportedLocales": [""],
+            "fallbackLocale": ""
+          }
+        }
+      }
+    }
+  }
+  

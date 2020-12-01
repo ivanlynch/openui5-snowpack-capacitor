@@ -1,0 +1,9 @@
+<mvc:View
+	controllerName="ctx.controller.App"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Shell>
+		<App id="app" />
+	</Shell>
+</mvc:View>

@@ -1,11 +1,11 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    public: '/',
+    www: '/',
     src: '/_dist_',
   },
   plugins: [
-    /* ... */
+
   ],
   install: [
     /* ... */
@@ -14,7 +14,7 @@ module.exports = {
     /* ... */
   },
   devOptions: {
-    /* ... */
+
   },
   buildOptions: {
     /* ... */
