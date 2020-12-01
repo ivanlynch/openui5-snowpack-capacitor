@@ -10,7 +10,8 @@
     }
   },
   "server": {
-      "url": "http://0.0.0.0:8080"
+      "url": "http://192.168.0.6:8080", // Snowpack server ip
+      "cleartext": true
   },
   "cordova": {}
 }
