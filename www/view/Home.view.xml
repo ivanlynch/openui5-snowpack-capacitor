@@ -2,7 +2,12 @@
      xmlns="sap.m" 
      controllerName="ctx.controller.Home"
      xmlns:mvc="sap.ui.core.mvc">
-    <Page title="Page 1">
-        
-    </Page>
+     <Page title="Home">
+        <VBox justifyContent="Center" alignItems="Center" class="sapUiLargeMargin">
+            <items>
+                <Title text="GG WP!" titleStyle="H1"/>
+                <Image width="300px" src="{/image}"/>
+            </items>
+        </VBox>
+     </Page>
 </mvc:View>
