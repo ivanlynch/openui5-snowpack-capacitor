@@ -39,7 +39,7 @@ then cd into the repo folder
 cd openui5-snowpack-capacitor && npm i
 ```
 
-## 2. Running configuration tasks
+## 2. Running configuration tasks ⚙️
 
 after installation of dependencies you need to execute:
 
@@ -49,17 +49,17 @@ gulp
 
 > Note: Right now the tasks defined in Gulpfile only download the latest mobile-runtime version in the meantime you can edit the gulpfile to fit your needs
 
-## 3. Build the application
+## 3. Build the application 🗜️
 
 Before run our application into any platform we need to create the build folder that is defined in the property `"webDir"` of the `capacitor.config.json`
 
-```bash 
+```bash
 npm run build
 ```
 
 after the command runs you will be able to see the build folder into the root of the project
 
-## 4. Configure your IP
+## 4. Configure your IP 🔧
 
 If we try to run the aplication on a real device we need to make sure two things:
 
@@ -76,7 +76,7 @@ after check those steps go to your `capacitor.config.json` and modify the `url` 
 }
 ```
 
-## 5. Add platforms
+## 5. Add platforms 📱
 
 IOS
 
@@ -92,7 +92,7 @@ Now open the platform
 
 `npx cap open <platform>`
 
-## 7. Run the development server
+## 7. Run the development server 💻
 
 Now we need to run our development server
 
@@ -102,14 +102,8 @@ this will start snowpack server and your browser should be opened.
 
 > You can test the HMR (Hot module reload) in the browser
 
-## 8. Run the application
+## 8. Run the application 🚀
 
 Now go to xcode or android studio and run your application. Once the application is running, you will see the hmr in action.
 
 > Note: Make sure to start snowpack before run the application
-
-
-
-
-
-
