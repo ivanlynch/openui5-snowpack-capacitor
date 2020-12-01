@@ -18,6 +18,8 @@
 
 # 🐑 Clone & Install 🐑
 
+### Degit
+
 Open your terminal and execute:
 
 ```bash
