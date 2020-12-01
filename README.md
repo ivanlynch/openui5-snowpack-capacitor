@@ -1,24 +1,17 @@
-# New Project
+# Motivation
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+## Short
 
-## Available Scripts
+Another alternative template to create mobile apps with OpenUI5
 
-### npm start
+## Long
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+## In the other repo i've created i was testing the performance and cordova is aceptable but isn't what i want, then i remembered about capacitor and i think is not comparable with react-native but the development experience with snowpack (Right now is the fatest frontend developer tool) feels much better
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+![Snowpack](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.snowpack.dev%2Fimg%2Fsocial-4.jpg&imgrefurl=https%3A%2F%2Fwww.snowpack.dev%2F&tbnid=XaxU_nTXws--SM&vet=12ahUKEwi6tPDzv63tAhURAtQKHdQGB4oQMygAegUIARCjAQ..i&docid=hoRQEM4XLeA0YM&w=1856&h=996&q=snowpack%20logo&ved=2ahUKEwi6tPDzv63tAhURAtQKHdQGB4oQMygAegUIARCjAQ)
 
-### npm run build
+![Capactior](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Fionic-team%2Fcapacitor&psig=AOvVaw1HtF4GxcYaVMxwiMWs5rrn&ust=1606936891978000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDXzMjAre0CFQAAAAAdAAAAABAD)
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+![Cordova](https://spotsolutions.com/wp-content/uploads/2017/06/cordova_logo_normal_dark_large.png 'Cordova')
 
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/master/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.json` config file.
-
-### Q: What about Eject?
-
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+![OpenUI5](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/OpenUI5_blue_horizontal.svg/1200px-OpenUI5_blue_horizontal.svg.png 'OpenUI5')
