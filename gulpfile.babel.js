@@ -1,12 +1,11 @@
 import {task, series, src, dest} from 'gulp';
-import download from 'gulp-download';
 import { execSync } from 'child_process';
 import unzip from 'gulp-unzip';
-import rename from 'gulp-rename';
 import del from 'del';
 import ui5preload from 'gulp-ui5-preload';
 import uglify from 'gulp-uglify';
 import gulpif from 'gulp-if';
+import download from 'gulp-download-stream';
 
 let CONFIG = {
     URL: ''
@@ -21,17 +20,16 @@ task('CLEAN_FOLDER', done => {
 task('GET_LATEST_MOBILE_RUNTINE', done => {
 
     CONFIG.URL = execSync(`curl -s https://api.github.com/repos/SAP/openui5/releases/latest | grep browser_download_url | grep openui5-runtime-mobile | cut -d '"' -f 4`).toString();
-    
-    download(CONFIG.URL)
-        .pipe(dest('./'))
-        .pipe(rename(function(path){
-            path.basename = "runtime"
-            path.extname = ".zip"
-        }))
-        .pipe(dest('./'))
-        .on('end', () => {
-            done()
-        })
+
+    download({
+        file: 'runtime.zip',
+        url: CONFIG.URL
+    })
+    .pipe(dest('./'))
+    .on('end', () => {
+        done()
+    })
+
 });
 
 task('CREATE_RESOURCE_FOLDER', done => {
@@ -60,4 +58,4 @@ task('CREATE_COMPONENT_PRELOAD', () => {
         .pipe(dest('www'))
 });
 
-export default series('CLEAN_FOLDER', 'GET_LATEST_MOBILE_RUNTINE', 'CREATE_RESOURCE_FOLDER', 'CREATE_COMPONENT_PRELOAD')
+export default series('CLEAN_FOLDER', 'GET_LATEST_MOBILE_RUNTINE', 'CREATE_RESOURCE_FOLDER', 'CREATE_COMPONENT_PRELOAD', 'DELETE_DEBUG_FILES')
